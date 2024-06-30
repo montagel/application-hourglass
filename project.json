@@ -11,7 +11,7 @@
     "UiPath.PDF.Activities": "[3.19.1]",
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Testing.Activities": "[23.10.1]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]"
+    "UiPath.UIAutomation.Activities": "[24.10.1]"
   },
   "webServices": [],
   "entitiesStores": [],
