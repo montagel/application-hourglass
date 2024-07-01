@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1227.3333333333333,2646" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="789.3333333333334,5553.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -136,7 +136,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="978,3096.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,250.66666666666663" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="chatGPTPrompt" />
       <Variable x:TypeArguments="s:String[]" Name="applicantDataArray" />
@@ -152,7 +152,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="selectFolderWithApplicants" sap:VirtualizedContainerService.HintSize="916,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_18">
+    <Sequence DisplayName="selectFolderWithApplicants" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_18">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -264,7 +264,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleDoWhile>
     </Sequence>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="[PdfApplications]" sap:VirtualizedContainerService.HintSize="916,2951.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachFileX_4" IncludeSubDirectories="True" OrderBy="NameAscFirst" SkipFolderWithoutPermission="True">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.pdf" Folder="[PdfApplications]" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEachFileX_4" IncludeSubDirectories="True" OrderBy="NameAscFirst" SkipFolderWithoutPermission="True">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -273,13 +273,13 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="882,2658.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670,4756" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="createChatGPTPrompt" sap:VirtualizedContainerService.HintSize="820,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="createChatGPTPrompt" sap:VirtualizedContainerService.HintSize="608,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="UnstructuredCVData" />
               </Sequence.Variables>
@@ -352,20 +352,20 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Sequence>
-            <Sequence DisplayName="retrieveDataFromChatGPT" sap:VirtualizedContainerService.HintSize="820,2215.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_30">
+            <Sequence DisplayName="retrieveDataFromChatGPT" sap:VirtualizedContainerService.HintSize="608,1499.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_30">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: HM-KI" sap:VirtualizedContainerService.HintSize="758,2095.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="961e84a9-7500-4e20-9477-6522c38222e9" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: HM-KI" sap:VirtualizedContainerService.HintSize="546,1379.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="961e84a9-7500-4e20-9477-6522c38222e9" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724,1853.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1137.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="chatGPTAnswer" />
                       </Sequence.Variables>
@@ -374,7 +374,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="It's important to take the input type simulate since there are enter-actions during the typing-process of the prompt." ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="662,316.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" Text="[chatGPTPrompt]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="It's important to take the input type simulate since there are enter-actions during the typing-process of the prompt." ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,316.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" Text="[chatGPTPrompt]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="https://ai.lab.hm.edu/interface" CvElementArea="828, 871, 647, 112" CvType="InputBox" DesignTimeRectangle="839, 876, 576, 96" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='text' class='input-field' aaname='' /&gt;" Guid="1b76e36a-e839-4d62-a29a-58d0b90b49f1" InformativeScreenshot="36f0253d5d34ee74e4c56a98edac89bc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HM-KI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -392,7 +392,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'PATH input-send-icon'" sap:VirtualizedContainerService.HintSize="662,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'PATH input-send-icon'" sap:VirtualizedContainerService.HintSize="450,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://ai.lab.hm.edu/interface" DesignTimeRectangle="1437, 922, 11, 11" DesignTimeScaleFactor="1.2000000476837158" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='input-send-icon' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-send-icon' tag='path' type='' class='' aaname='' /&gt;" Guid="be084817-b276-4a18-b82d-9cbca8da3718" InformativeScreenshot="a62154d576367cadd2161b92bb801102.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HM-KI' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -403,7 +403,7 @@
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NGetText DelayBefore="5" DisplayName="Get Text 'System Prompt:'" sap:VirtualizedContainerService.HintSize="662,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" TextString="[chatGPTAnswer]" Version="V3">
+                      <uix:NGetText DelayBefore="5" DisplayName="Get Text 'System Prompt:'" sap:VirtualizedContainerService.HintSize="450,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="961e84a9-7500-4e20-9477-6522c38222e9" TextString="[chatGPTAnswer]" Version="V3">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="https://ai.lab.hm.edu/interface" DesignTimeRectangle="906, 314, 566, 58" DesignTimeScaleFactor="1.2000000476837158" ElementType="Text" FullSelectorArgument="&lt;webctrl class='message-text' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='message-text' type='' tag='DIV' /&gt;" Guid="ea060d41-02eb-4027-be6b-ea62598a8291" InformativeScreenshot="01e10f1d55d71d808b6920638ee73fcc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HM-KI' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
@@ -415,7 +415,7 @@
                           </uix:TargetAnchorable>
                         </uix:NGetText.Target>
                       </uix:NGetText>
-                      <Assign sap:VirtualizedContainerService.HintSize="662,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign sap:VirtualizedContainerService.HintSize="450,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="s:String[]">[applicantDataArray]</OutArgument>
                         </Assign.To>
@@ -423,14 +423,15 @@
                           <InArgument x:TypeArguments="s:String[]">[chatGPTAnswer.Split("|")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="662,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ANKER: &quot; + chatGPTAnswer]" />
-                      <Sequence DisplayName="ValidateChatGPTAnswer" sap:VirtualizedContainerService.HintSize="662,766.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ANKER: &quot; + chatGPTAnswer]" />
+                      <Sequence DisplayName="ValidateChatGPTAnswer" sap:VirtualizedContainerService.HintSize="450,50.666666666666664" sap2010:WorkflowViewState.IdRef="Sequence_31">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Flowchart sap:VirtualizedContainerService.HintSize="600,650.6666666666666" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+                        <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -445,7 +446,7 @@
                           </Flowchart.StartNode>
                           <FlowDecision x:Name="__ReferenceID0" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60.666666666666664,60.666666666666664" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                             <FlowDecision.Condition>
-                              <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="applicantDataArray.Length = 8" />
+                              <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="applicantDataArray.Length = 9" />
                             </FlowDecision.Condition>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -507,129 +508,178 @@
                 </uix:NApplicationCard.TargetApp>
               </uix:NApplicationCard>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="820,298" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,195.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="addApplicant" sap:VirtualizedContainerService.HintSize="450,107.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: React App" sap:VirtualizedContainerService.HintSize="450,2236.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V2">
-                      <uix:NApplicationCard.Body>
-                        <ActivityAction x:TypeArguments="x:Object">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1994.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(0)]" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" DesignTimeRectangle="845, 414, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="08ceabba-4419-425d-9080-28ace6b49ba1" InformativeScreenshot="239f4fff05dafa22741630dab8d2280d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="629, 425, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Name:' check:innerText='Name:' /&gt;" Guid="3d819830-888f-4c7e-aa67-370898155623" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(3)]" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" DesignTimeRectangle="845, 470, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='' aaname='' /&gt;" Guid="cf22d070-26c2-4e8e-9252-6334f28544f8" InformativeScreenshot="76bcc8dd39cb1b4a7718a6e2bceabd0c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target DesignTimeRectangle="629, 481, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' type='' class='' check:innerText='Email:' /&gt;" Guid="9a9a4b24-8618-4d2f-8061-3d4da4e38ff2" SearchSteps="FuzzySelector" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Birthday'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(1)]" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="384, 514, 473, 49" CvType="InputBox" DesignTimeRectangle="388, 516, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='birthday' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='birthday' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="4516882c-0365-42c4-b44c-197f49462cdb" InformativeScreenshot="664f4885bba9305cf1e8e8d6d78bc7d2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="240, 526, 78, 22" CvTextArgument="Birthday:" CvType="Text" DesignTimeRectangle="172, 525, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Birthday:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Birthday:' tag='LABEL' type='' class='' check:innerText='Birthday:' /&gt;" Guid="787c3889-31cb-4b7f-b6c3-25a0dd6070a6" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Job Title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(5)]" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="385, 573, 472, 49" CvType="InputBox" DesignTimeRectangle="388, 575, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='lastJobTitle' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='lastJobTitle' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="d654565b-6779-4781-a5c3-9ecce7823e0a" InformativeScreenshot="bb89d738338368b2588036e0f57b12a0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="219, 585, 119, 19" CvTextArgument="Last Job Title:" CvType="Text" DesignTimeRectangle="172, 585, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Last Job Title:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Job Title:' tag='LABEL' type='' class='' check:innerText='Last Job Title:' /&gt;" Guid="a5d23cfa-fad4-4c59-9960-6c360382ec0b" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Graduation'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="385, 630, 472, 49" CvType="InputBox" DesignTimeRectangle="388, 631, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='graduation' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='graduation' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e584c6d2-5092-42a8-a328-70ff7bb0ce2e" InformativeScreenshot="446435a0b01288483a3788d0f4deaa41.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="226, 642, 103, 18" CvTextArgument="Graduation:" CvType="Text" DesignTimeRectangle="172, 641, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Graduation:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Graduation:' tag='LABEL' type='' class='' check:innerText='Graduation:' /&gt;" Guid="cfa8ae58-a23f-4240-9cbb-5ecb2c6c4333" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Place of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(2)]" Version="V3">
-                              <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="384, 685, 473, 49" CvType="InputBox" DesignTimeRectangle="388, 687, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='placeOfBirth' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='placeOfBirth' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="da0b593d-c1da-40a7-82d0-b9874e1f6a4d" InformativeScreenshot="9fddaa9f2c29004043c9f20ed151e436.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="219, 697, 119, 19" CvTextArgument="Place of Birth:" CvType="Text" DesignTimeRectangle="172, 697, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Place of Birth:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Place of Birth:' tag='LABEL' type='' class='' check:innerText='Place of Birth:' /&gt;" Guid="4cad21c8-b74f-47f5-98b3-ee533935334d" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NTypeInto.Target>
-                            </uix:NTypeInto>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Applicant'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="330, 741, 366, 47" CvTextArea="460, 754, 104, 21" CvTextArgument="Add Applicant" CvType="Button" DesignTimeRectangle="334, 743, 360, 42" DesignTimeScaleFactor="1.2000000476837158" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='Add Applicant' check:innerText='Add Applicant' /&gt;" Guid="14d56415-efaa-48fc-9757-c8619cd511cb" InformativeScreenshot="c5be939b0d0fed86d78adc96cd77e84b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V3">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="937, 615, 65, 28" CvTextArea="949, 619, 42, 16" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="941, 617, 59, 24" DesignTimeScaleFactor="1.2000000476837158" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' type='' class='' check:innerText='Close' /&gt;" Guid="534f5691-807c-477e-b7b8-0ecf32a4e5ad" InformativeScreenshot="1457aedba267654db71b96d3d08e1097.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                          </Sequence>
-                        </ActivityAction>
-                      </uix:NApplicationCard.Body>
-                      <uix:NApplicationCard.TargetApp>
-                        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bb43942913c7bfdd4a7681cac32f43e2.jpg" Selector="&lt;html app='chrome.exe' title='React App' /&gt;" Title="React App" Url="http://localhost:3000/add-applicant" />
-                      </uix:NApplicationCard.TargetApp>
-                    </uix:NApplicationCard>
-                  </Sequence>
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
+            <Sequence DisplayName="addApplicant" sap:VirtualizedContainerService.HintSize="608,3111.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_32">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: React App" sap:VirtualizedContainerService.HintSize="450,3000.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2758.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(0)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" DesignTimeRectangle="845, 414, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="08ceabba-4419-425d-9080-28ace6b49ba1" InformativeScreenshot="239f4fff05dafa22741630dab8d2280d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="629, 425, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Name:' check:innerText='Name:' /&gt;" Guid="3d819830-888f-4c7e-aa67-370898155623" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(3)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" DesignTimeRectangle="845, 470, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='' aaname='' /&gt;" Guid="cf22d070-26c2-4e8e-9252-6334f28544f8" InformativeScreenshot="76bcc8dd39cb1b4a7718a6e2bceabd0c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="629, 481, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email:' tag='LABEL' type='' class='' check:innerText='Email:' /&gt;" Guid="9a9a4b24-8618-4d2f-8061-3d4da4e38ff2" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(4)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvElementArea="841, 524, 473, 49" CvType="InputBox" DesignTimeRectangle="845, 527, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='address' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='address' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="0fd759da-fdaa-47cd-b395-91e69b77a6c7" InformativeScreenshot="ca49853d46aff48555071a156880ba07.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvTextArea="696, 537, 78, 19" CvTextArgument="Address:" CvType="Text" DesignTimeRectangle="629, 536, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Address:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address:' tag='LABEL' type='' class='' check:innerText='Address:' /&gt;" Guid="72228bf4-5bb0-40f6-9776-c34206894ed9" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Birthday'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(1)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="384, 514, 473, 49" CvType="InputBox" DesignTimeRectangle="388, 516, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='birthday' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='birthday' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="4516882c-0365-42c4-b44c-197f49462cdb" InformativeScreenshot="664f4885bba9305cf1e8e8d6d78bc7d2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="240, 526, 78, 22" CvTextArgument="Birthday:" CvType="Text" DesignTimeRectangle="172, 525, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Birthday:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Birthday:' tag='LABEL' type='' class='' check:innerText='Birthday:' /&gt;" Guid="787c3889-31cb-4b7f-b6c3-25a0dd6070a6" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Place of Birth'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(2)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="384, 685, 473, 49" CvType="InputBox" DesignTimeRectangle="388, 687, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='placeOfBirth' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='placeOfBirth' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="da0b593d-c1da-40a7-82d0-b9874e1f6a4d" InformativeScreenshot="9fddaa9f2c29004043c9f20ed151e436.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="219, 697, 119, 19" CvTextArgument="Place of Birth:" CvType="Text" DesignTimeRectangle="172, 697, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Place of Birth:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Place of Birth:' tag='LABEL' type='' class='' check:innerText='Place of Birth:' /&gt;" Guid="4cad21c8-b74f-47f5-98b3-ee533935334d" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Job Title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(5)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="385, 573, 472, 49" CvType="InputBox" DesignTimeRectangle="388, 575, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='lastJobTitle' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='lastJobTitle' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="d654565b-6779-4781-a5c3-9ecce7823e0a" InformativeScreenshot="bb89d738338368b2588036e0f57b12a0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="219, 585, 119, 19" CvTextArgument="Last Job Title:" CvType="Text" DesignTimeRectangle="172, 585, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Last Job Title:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Job Title:' tag='LABEL' type='' class='' check:innerText='Last Job Title:' /&gt;" Guid="a5d23cfa-fad4-4c59-9960-6c360382ec0b" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Job position'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(8)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvElementArea="841, 749, 472, 49" CvType="InputBox" DesignTimeRectangle="845, 751, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='position' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='position' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="c7c3045a-9f9d-4b0a-b9d8-f39a1704bb2a" InformativeScreenshot="59c565bd10820d9965b5edb1845c6ecf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvTextArea="681, 760, 109, 22" CvTextArgument="Job position:" CvType="Text" DesignTimeRectangle="629, 761, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Job position:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Job position:' tag='LABEL' type='' class='' check:innerText='Job position:' /&gt;" Guid="a024a2c3-c1f5-4c19-8b67-fb7eb56186d8" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Experience'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(6)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvElementArea="841, 804, 472, 49" CvType="InputBox" DesignTimeRectangle="845, 807, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='jobExperience' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='jobExperience' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="eb54d071-bab4-4b93-bc7f-57878db955a7" InformativeScreenshot="5004d048e3a39ac3cd3ec60bf2b4a24b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="4519435f-0dd9-469b-89cb-19a9e4474332" CvTextArea="685, 817, 102, 22" CvTextArgument="Experience:" CvType="Text" DesignTimeRectangle="629, 816, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Experience:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Experience:' tag='LABEL' type='' class='' check:innerText='Experience:' /&gt;" Guid="714b7c86-75d7-4228-b71f-1587d57d8ced" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Graduation'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Text="[applicantDataArray(7)]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="385, 630, 472, 49" CvType="InputBox" DesignTimeRectangle="388, 631, 468, 44" DesignTimeScaleFactor="1.2000000476837158" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='graduation' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='graduation' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e584c6d2-5092-42a8-a328-70ff7bb0ce2e" InformativeScreenshot="446435a0b01288483a3788d0f4deaa41.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="226, 642, 103, 18" CvTextArgument="Graduation:" CvType="Text" DesignTimeRectangle="172, 641, 216, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Graduation:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Graduation:' tag='LABEL' type='' class='' check:innerText='Graduation:' /&gt;" Guid="cfa8ae58-a23f-4240-9cbb-5ecb2c6c4333" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Applicant'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CvElementArea="330, 741, 366, 47" CvTextArea="460, 754, 104, 21" CvTextArgument="Add Applicant" CvType="Button" DesignTimeRectangle="334, 743, 360, 42" DesignTimeScaleFactor="1.2000000476837158" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='' aaname='Add Applicant' check:innerText='Add Applicant' /&gt;" Guid="14d56415-efaa-48fc-9757-c8619cd511cb" InformativeScreenshot="c5be939b0d0fed86d78adc96cd77e84b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="354,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="12acf1be-f0fb-4ee6-9272-249bd7576dc2" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="http://localhost:3000/add-applicant" CVScreenId="0f608a7c-3baa-48c5-97fa-1fd2fdda1bc8" CvElementArea="937, 615, 65, 28" CvTextArea="949, 619, 42, 16" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="941, 617, 60, 24" DesignTimeScaleFactor="1.2000000476837158" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' type='' class='' check:innerText='Close' /&gt;" Guid="2b4b8ccb-f819-4af6-b8bd-4144f2ac8b68" InformativeScreenshot="247470a0c910f57b16d6d8a444e737ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='React App' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bb43942913c7bfdd4a7681cac32f43e2.jpg" Selector="&lt;html app='chrome.exe' title='React App' /&gt;" Title="React App" Url="http://localhost:3000/add-applicant" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachFileX>
+    <Sequence DisplayName="contactBestApplicants" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_33">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: React App" sap:VirtualizedContainerService.HintSize="450,349.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="7f9f74b4-1229-4b29-99c4-acca1131a920" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,107.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_34">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d8c6522e8c85ea44ff12fb0849760279.jpg" Selector="&lt;html app='chrome.exe' title='React App' /&gt;" Title="React App" Url="http://localhost:3000/applicant-overview" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
   </Sequence>
 </Activity>
